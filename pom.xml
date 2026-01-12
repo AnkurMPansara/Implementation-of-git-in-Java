@@ -6,6 +6,13 @@
   <groupId>dev.ankur.git</groupId>
   <artifactId>java-git</artifactId>
   <version>1.0</version>
+  <configuration>
+    <archive>
+        <manifest>
+            <mainClass>dev.ankur.get.cli.Main</mainClass>
+        </manifest>
+    </archive>
+  </configuration>
 
   <!-- Java version -->
   <properties>
