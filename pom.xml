@@ -1,28 +1,43 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <modelVersion>4.0.0</modelVersion>
+    <groupId>dev.ankur.git</groupId>
+    <artifactId>java-git</artifactId>
+    <version>1.0</version>
 
-  <!-- Project identity -->
-  <groupId>dev.ankur.git</groupId>
-  <artifactId>java-git</artifactId>
-  <version>1.0</version>
-  <configuration>
-    <archive>
-        <manifest>
-            <mainClass>dev.ankur.get.cli.Main</mainClass>
-        </manifest>
-    </archive>
-  </configuration>
+    <build>
+        <finalName>java-git</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>17</source> 
+                    <target>17</target>
+                </configuration>
+            </plugin>
 
-  <!-- Java version -->
-  <properties>
-    <maven.compiler.source>25</maven.compiler.source>
-    <maven.compiler.target>25</maven.compiler.target>
-  </properties>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>dev.ankur.get.cli.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
-  <!-- External libraries (optional) -->
-  <dependencies>
-    <!-- nothing here = pure JDK -->
-  </dependencies>
+    <dependencies>
+        </dependencies>
 
 </project>
