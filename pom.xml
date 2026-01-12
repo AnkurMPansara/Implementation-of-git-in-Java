@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project identity -->
+  <groupId>dev.ankur.git</groupId>
+  <artifactId>java-git</artifactId>
+  <version>1.0</version>
+  <configuration>
+    <archive>
+        <manifest>
+            <mainClass>dev.ankur.get.cli.Main</mainClass>
+        </manifest>
+    </archive>
+  </configuration>
+
+  <!-- Java version -->
+  <properties>
+    <maven.compiler.source>25</maven.compiler.source>
+    <maven.compiler.target>25</maven.compiler.target>
+  </properties>
+
+  <!-- External libraries (optional) -->
+  <dependencies>
+    <!-- nothing here = pure JDK -->
+  </dependencies>
+
+</project>
